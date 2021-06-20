@@ -165,7 +165,7 @@ tab_1_ = dcc.Tab(
 
 @app.callback(
     Output('Loan_granted', 'children'),    
-    Input('customer_id', 'value'))
+    [Input('customer_id', 'value')])
     
 def update_status(customer_id):
     print('customer_id', customer_id)
@@ -181,7 +181,7 @@ def update_status(customer_id):
 
 @app.callback(
     Output('score_gauge', 'figure'),
-    Input('customer_id', 'value'))
+    [Input('customer_id', 'value')])
 
 def update_gauge(customer_id):
     print('customer_id', customer_id)
@@ -228,7 +228,7 @@ def update_gauge(customer_id):
     Output('Income', 'children'),
     Output('Credit', 'children'),
     ], 
-    Input('customer_id', 'value'))
+    [Input('customer_id', 'value')])
 
 def update_text(customer_id):
     dff = df[df['SK_ID_CURR'] == customer_id]
@@ -246,7 +246,7 @@ def update_text(customer_id):
 
 @app.callback(
     Output('top3_features', 'figure'),
-    Input('customer_id', 'value'))
+    [Input('customer_id', 'value')])
 
 def update_barh(customer_id):
     print('customer_id', customer_id)
