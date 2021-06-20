@@ -10,8 +10,8 @@ from seaborn.rcmod import set_style
 from app import app
 
 # API URL
-#URL = 'http://127.0.0.1:5000/scoring'
-URL = 'https://loan-scoring-api.herokuapp.com/scoring'
+URL = 'http://127.0.0.1:5000/scoring'
+#URL = 'https://loan-scoring-api.herokuapp.com/scoring'
 
 
 ################################## TAB 2 CONTENT ####################################
