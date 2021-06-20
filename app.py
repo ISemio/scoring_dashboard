@@ -2,7 +2,7 @@
 ################################# CREATE APP ##################################
 
 import dash
-from whitenoise import WhiteNoise
+#from whitenoise import WhiteNoise
 
 APP_TITLE = 'Loan Dashboard'
 
@@ -13,7 +13,7 @@ app = dash.Dash(
 
 # Associating server
 server = app.server
-server.wsgi_app = WhiteNoise(server.wsgi_app, root='src/')
+#server.wsgi_app = WhiteNoise(server.wsgi_app, root='src/')
 
 app.title = APP_TITLE
 app.config.suppress_callback_exceptions = True
