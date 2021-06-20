@@ -11,6 +11,7 @@ from logzero import logger as lg
 from app import app, APP_TITLE
 from tabs.tab_1 import tab_1_
 from tabs.tab_2 import tab_2_
+from app import server
 
 # Creating stylesheets
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
