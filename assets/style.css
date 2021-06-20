@@ -1,0 +1,219 @@
+.header {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .header_1 {
+    background-color: white;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 40px;
+  }
+  .header_2 {
+    background-color: white;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: slateblue;
+    flex: 1;
+  }
+  .header_3 {
+    background-color: white;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 40px;
+  }
+
+  .tab_name {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(105, 80, 173);
+    color: rgb(170, 161, 207);
+  }
+
+ 
+  .customer_filter {
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+  }
+    .info_box {
+      display: flex;
+      background-color: white;
+      justify-content: center;
+      align-items: left;
+      margin-top: 10px;
+      flex-direction: column;
+    }
+        .info_box_1 {
+        background-color: white;
+        width: 300px;
+        margin: 0px;
+        text-align: center;
+       
+        font-size: 20px;
+      }
+    .cust_info {
+      display: flex;
+      background-color: white;
+      justify-content: center;
+      font-size: 18px;
+      align-items: right;
+      flex-direction: row;
+      flex: 1;
+    }
+      .main_info {
+        display: flex;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        line-height: 30px;
+      }
+        .cust_info_1 {
+          display: flex;
+          justify-content: center;
+          align-items: right;
+          flex-direction: row;
+          flex: 1;
+        }
+          .cust_info_1_1 {
+            background-color: rgb(210, 202, 245);
+            width: 300px;
+            margin: 25px;
+            margin-bottom: 50px;
+            border-top-color: rgb(64, 11, 97);
+            border-top-width: medium;
+            border-top-style: groove;
+            justify-content: center;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+            color: rgb(27, 4, 41);
+            flex-direction: row;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+        .cust_info_2 {
+          background-color: white;
+          width: 900px;
+          margin: 50px;
+          justify-content: center;
+          text-align: center;
+          line-height: 30px;
+          font-size: 24px;
+        }
+
+  .feat_distr {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+      .feat_content {
+      display: flex;
+      background-color: white;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      margin: 0px;
+    }
+    .feat_distr_1 {
+      background-color: white;
+      width: 630px;
+      margin: 0px;
+      text-align: center;
+      
+    }
+
+
+  #Age, #Gender, #Children, #Income, #Credit, #Family_status {
+  color: rgb(145, 79, 206);
+  font-style: italic;
+  font-weight: bold;
+
+}
+.title_2{
+  font-size: 24px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: slateblue;
+}
+
+.title_3{
+  font-size: 24px;
+  margin: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: slateblue;
+}
+
+.title_4{
+  font-size: 24px;
+  margin-top: 25px;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: slateblue;
+}
+
+.form_content {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  color: rgb(33, 18, 126);
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: right;
+  margin-top:20px;
+  margin-left: 50px;
+  width: 200px;
+  flex-direction: column;
+}
+
+.button {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  color: blue;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: right;
+  margin-top:50px;
+  margin-left: 50px;
+  width: 120px;
+  flex-direction: column;
+}
+
+.error{
+  color:red;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin:50px;
+
+}
+
+.granted{
+  color:green;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin:50px;
+}
+
+.not_granted{
+  color:red;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin:50px;
+}

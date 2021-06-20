@@ -1,0 +1,5 @@
+*.pyc
+*.ipynb
+*.sav
+.vscode
+.DS_Store
