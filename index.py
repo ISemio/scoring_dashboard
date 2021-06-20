@@ -76,4 +76,4 @@ if __name__ == '__main__':
     lg.error("*" * 80)
 
     # Run application
-    app.run_server(debug=True, host="127.0.0.1", port=1234)
+    app.run_server(debug=True)
