@@ -13,7 +13,7 @@ app = dash.Dash(
 
 # Associating server
 server = app.server
-server.wsgi_app = WhiteNoise(server.wsgi_app, root=‘static/’)
+server.wsgi_app = WhiteNoise(server.wsgi_app, root='src/')
 
 app.title = APP_TITLE
 app.config.suppress_callback_exceptions = True
