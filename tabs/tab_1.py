@@ -358,7 +358,7 @@ def update_distplot_2(customer_id):
     
     
 def update_distplot_3(customer_id):
-    feat = 'Age'
+    feat = 'DAYS REGISTRATION'
     print(feat)
     x1 = df[df['TARGET']==0][feat]
     x2 = df[df['TARGET']==1][feat]
