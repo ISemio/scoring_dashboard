@@ -71,10 +71,10 @@ app.layout = html.Div(
 
 if __name__ == '__main__':
 
-#     # Display app start
-#     lg.error("*" * 80)
-#     lg.error("Initialisation")
-#     lg.error("*" * 80)
+    # Display app start
+    lg.error("*" * 80)
+    lg.error("Initialisation")
+    lg.error("*" * 80)
 
     # Run application
     app.run_server(debug=True)

@@ -10,8 +10,8 @@ from seaborn.rcmod import set_style
 from app import app
 
 # API URL
-URL = 'http://127.0.0.1:5000/scoring'
-#URL = 'https://loan-scoring-api.herokuapp.com/scoring'
+#URL = 'http://127.0.0.1:5000/scoring'
+URL = 'https://loan-scoring-api.herokuapp.com/scoring'
 
 
 ################################## TAB 2 CONTENT ####################################
@@ -97,12 +97,12 @@ tab_2_ = dcc.Tab(
 
 ##################################  CALLBACKS #################################
 
-@app.callback(
-    Output('app-2-display-value', 'children'),
-    Input('tab_2_dropdown', 'value'))
+# @app.callback(
+#     Output('app-2-display-value', 'children'),
+#     Input('tab_2_dropdown', 'value'))
   
-def display_value(value):
-    return 'You have selected "{}"'.format(value)
+# def display_value(value):
+#     return 'You have selected "{}"'.format(value)
 
 
 @app.callback(
