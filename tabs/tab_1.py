@@ -84,7 +84,7 @@ tab_1_ = dcc.Tab(
                         dcc.Dropdown(
                         id='customer_id',
                         options=[{'label': i, 'value': i} for i in df['SK_ID_CURR']],
-                        value=318227)
+                        value=223232)
                     ], className='info_box_1', 
                     )
                 ], className='info_box'),
@@ -252,8 +252,8 @@ def update_barh(customer_id):
     print('customer_id', customer_id)
     dff = df[df['SK_ID_CURR'] == customer_id]
     print('barh', dff.shape)
-    features = ['EXT_SOURCE_2', 'EXT_SOURCE_3', 'EXT_SOURCE_1']
-    colors = {'EXT_SOURCE_2':'steelblue','EXT_SOURCE_3':'firebrick', 'EXT_SOURCE_1':'purple'}
+    features = ['EXT_SOURCE_2', 'DAYS_BIRTH', 'DAYS_REGISTRATION']
+    colors = {'EXT_SOURCE_2':'steelblue','EXT_SOURCE_2':'firebrick', 'EXT_SOURCE_2':'purple'}
     fig = go.Figure(go.Bar(
             y=features,
             x=[dff[i].iloc[0] for i in features],
