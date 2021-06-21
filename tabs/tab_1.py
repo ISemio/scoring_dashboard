@@ -15,12 +15,14 @@ import plotly.express as px
 import plotly.graph_objects as go
 import plotly.figure_factory as ff
 from app import app
+from logzero import logger as lg
 
 
 # Loading external data
 #path = r"C:\Users\IS\Documents\Data Scientist\P7\P7_semionov_irina\P7_02_dossier\dashboard\src" +'\\'
 path = 'src/'
 DATA_PATH = path +'data_processed.csv'
+lg.debug(DATA_PATH)
 df = pd.read_csv(DATA_PATH)
 df = df.fillna(0)
 
@@ -356,7 +358,8 @@ def update_distplot_2(customer_id):
     
     
 def update_distplot_3(customer_id):
-    feat = 'DAYS_REGISTRATION'
+    feat = 'Age'
+    print(feat)
     x1 = df[df['TARGET']==0][feat]
     x2 = df[df['TARGET']==1][feat]
     marker = df[df['SK_ID_CURR'] == customer_id][feat].iloc[0]
