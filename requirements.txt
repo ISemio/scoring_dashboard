@@ -12,3 +12,4 @@ pickle-mixin==1.0.2
 plotly.express
 gunicorn
 whitenoise
+requests
