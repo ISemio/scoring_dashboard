@@ -255,7 +255,7 @@ def update_barh(customer_id):
     df['AGE'] = df['Age']
     dff = df[df['SK_ID_CURR'] == customer_id]
     features = ['EXT_SOURCE_2', 'AGE', 'DAYS REGISTRATION']
-    colors = ['rebeccapurple',] * 3
+    colors = ['lightsteelblue',] * 3
     colors[1] = 'slateblue'
     fig = go.Figure(go.Bar(
                 y=features,
