@@ -200,10 +200,10 @@ def update_gauge(customer_id):
         gauge = {'bar': {'color': "mediumpurple"},
         'axis': {'range': [0, 1]},
              'steps' : [
-                 {'range': [0, 0.15], 'color': "green"},
-                 {'range': [0.15, 0.30], 'color': "yellow"},
-                 {'range': [0.30, 0.50], 'color': "orange"},
-                 {'range': [0.50, 1], 'color': "red"},                 
+                 {'range': [0, 0.15], 'color': "darkgreen"},
+                 {'range': [0.15, 0.30], 'color': "aquamarine"},
+                 {'range': [0.30, 0.50], 'color': "coral"},
+                 {'range': [0.50, 1], 'color': "crimson"},                
              ],
           }))
     fig.update_layout(
@@ -322,7 +322,7 @@ def update_distplot_1(customer_id):
             l=60,
             r=30,
             b=10,
-            t=20,
+            t=25,
             pad=0
         ),
     )
@@ -367,7 +367,7 @@ def update_distplot_2(customer_id):
             l=30,
             r=30,
             b=10,
-            t=20,
+            t=25,
             pad=0
         ),
     )
@@ -420,7 +420,7 @@ def update_distplot_3(customer_id):
             l=30,
             r=60,
             b=10,
-            t=20,
+            t=25,
             pad=0
         ),
     )
