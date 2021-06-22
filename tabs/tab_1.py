@@ -252,7 +252,7 @@ def update_text(customer_id):
 
 def update_barh(customer_id):
     print('customer_id', customer_id)
-    df['Age'] = df['AGE']
+    df['AGE'] = df['Age']
     dff = df[df['SK_ID_CURR'] == customer_id]
     features = ['EXT_SOURCE_2', 'AGE', 'DAYS REGISTRATION']
     colors = {'EXT_SOURCE_2':'steelblue','EXT_SOURCE_2':'firebrick', 'EXT_SOURCE_2':'purple'}
