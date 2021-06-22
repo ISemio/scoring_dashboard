@@ -312,10 +312,10 @@ def update_distplot_1(customer_id):
         color="RebeccaPurple"
     ),
     margin=dict(
-            l=10,
-            r=10,
-            b=0,
-            t=0,
+            l=30,
+            r=30,
+            b=10,
+            t=20,
             pad=0
         ),
     )
@@ -356,10 +356,10 @@ def update_distplot_2(customer_id):
         color="RebeccaPurple"
     ),
     margin=dict(
-            l=10,
-            r=10,
-            b=0,
-            t=0,
+            l=30,
+            r=30,
+            b=10,
+            t=20,
             pad=0
         ),
     )
@@ -407,10 +407,10 @@ def update_distplot_3(customer_id):
         color="RebeccaPurple"
     ),
     margin=dict(
-            l=10,
-            r=10,
-            b=0,
-            t=0,
+            l=30,
+            r=30,
+            b=10,
+            t=20,
             pad=0
         ),
     )
