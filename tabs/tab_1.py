@@ -331,12 +331,12 @@ def update_distplot_1(customer_id):
 
 
 @app.callback(
-    Output("feat_distplot_2", "figure"), 
+    Output("feat_distplot_3", "figure"), 
     [Input('customer_id', 'value'),
         ]
     )
     
-def update_distplot_2(customer_id):
+def update_distplot_3(customer_id):
     feat = 'DAYS REGISTRATION'
     x1 = df[df['TARGET']==0][feat]
     x2 = df[df['TARGET']==1][feat]
@@ -359,7 +359,13 @@ def update_distplot_2(customer_id):
     height=320,
     xaxis_title='DAYS REGISTRATION',
     yaxis_title="Density",
-    showlegend=False,
+    legend=dict(
+    orientation="v",
+    yanchor="top",
+    y=1,
+    xanchor="right",
+    x=1.50
+),
     font=dict(
         size=10,
         color="RebeccaPurple"
@@ -375,13 +381,13 @@ def update_distplot_2(customer_id):
     return fig
 
 @app.callback(
-    Output("feat_distplot_3", "figure"), 
+    Output("feat_distplot_2", "figure"), 
     [Input('customer_id', 'value'),
         ]
     )
     
     
-def update_distplot_3(customer_id):
+def update_distplot_2(customer_id):
     feat = 'Age'
     print(feat)
     x1 = df[df['TARGET']==0][feat]
@@ -406,13 +412,7 @@ def update_distplot_3(customer_id):
     width=650,
     xaxis_title='AGE',
     yaxis_title="Density",
-    legend=dict(
-    orientation="v",
-    yanchor="top",
-    y=1,
-    xanchor="right",
-    x=1.50
-),
+    showlegend=False,
     font=dict(
         size=10,
         color="RebeccaPurple"
