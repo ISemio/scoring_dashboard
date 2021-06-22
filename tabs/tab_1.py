@@ -304,6 +304,7 @@ def update_distplot_1(customer_id):
                 name="Customer position",
                 )
     fig.update_layout(
+    height=200,
     xaxis_title=feat, 
     yaxis_title="Density", 
     showlegend=False,
@@ -312,8 +313,8 @@ def update_distplot_1(customer_id):
         color="RebeccaPurple"
     ),
     margin=dict(
-            l=30,
-            r=30,
+            l=50,
+            r=50,
             b=10,
             t=20,
             pad=0
@@ -410,7 +411,7 @@ def update_distplot_3(customer_id):
             l=30,
             r=30,
             b=10,
-            t=20,
+            t=0,
             pad=0
         ),
     )
