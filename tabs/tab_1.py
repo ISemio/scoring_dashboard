@@ -255,12 +255,13 @@ def update_barh(customer_id):
     df['AGE'] = df['Age']
     dff = df[df['SK_ID_CURR'] == customer_id]
     features = ['EXT_SOURCE_2', 'AGE', 'DAYS REGISTRATION']
-    colors = ['slateblue',]*3
-    colors[1] = 'crimson'
+    colors = ['rebeccapurple',] * 3
+    colors[1] = 'slateblue'
     fig = go.Figure(go.Bar(
                 y=features,
                 x=[dff[i].iloc[0]/df[i].max()*100 for i in features],
-                width=[0.8, 0.8, 0.8] # customize width here
+                width=[0.5, 0.5, 0.5], # customize width here
+                marker_color=colors,
                 orientation='h'),
                 )
     fig.update_layout(
