@@ -59,7 +59,7 @@
     }
         .info_box_1 {
         background-color: white;
-        width: 300px;
+        width: 200px;
         margin: 0px;
         text-align: center;
         font-size: 20px;
@@ -90,7 +90,7 @@
         }
           .cust_info_1_1 {
             background-color: rgb(210, 202, 245);
-            width: 300px;
+            width: 250px;
             margin: 25px;
             margin-bottom: 50px;
             border-top-color: rgb(64, 11, 97);
@@ -106,7 +106,7 @@
           }
         .cust_info_2 {
           background-color: white;
-          width: 900px;
+          width: 500px;
           margin: 50px;
           justify-content: center;
           text-align: center;
@@ -133,7 +133,7 @@
     }
     .feat_distr_1 {
       background-color: white;
-      width: 630px;
+      width: 400px;
       margin: 0px;
       text-align: center;
       
