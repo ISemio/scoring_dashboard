@@ -252,14 +252,15 @@ def update_text(customer_id):
 
 def update_barh(customer_id):
     print('customer_id', customer_id)
+    df['Age'] = df['AGE']
     dff = df[df['SK_ID_CURR'] == customer_id]
-    print('barh', dff.shape)
-    features = ['EXT_SOURCE_2', 'DAYS_BIRTH', 'DAYS_REGISTRATION']
+    features = ['EXT_SOURCE_2', 'AGE', 'DAYS REGISTRATION']
     colors = {'EXT_SOURCE_2':'steelblue','EXT_SOURCE_2':'firebrick', 'EXT_SOURCE_2':'purple'}
     fig = go.Figure(go.Bar(
-            y=features,
-            x=[dff[i].iloc[0] for i in features],
-            orientation='h'))
+                y=features,
+                x=[dff[i].iloc[0]/df[i].max()*100 for i in features],
+                orientation='h'),
+                )
     fig.update_layout(
         #autosize=False,
         #width=500,
