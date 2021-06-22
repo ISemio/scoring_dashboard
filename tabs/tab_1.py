@@ -310,7 +310,14 @@ def update_distplot_1(customer_id):
     font=dict(
         size=10,
         color="RebeccaPurple"
-    )
+    ),
+    margin=dict(
+            l=10,
+            r=10,
+            b=0,
+            t=0,
+            pad=0
+        ),
     )
     return fig
 
@@ -347,7 +354,14 @@ def update_distplot_2(customer_id):
     font=dict(
         size=10,
         color="RebeccaPurple"
-    )
+    ),
+    margin=dict(
+            l=10,
+            r=10,
+            b=0,
+            t=0,
+            pad=0
+        ),
     )
     return fig
 
@@ -391,6 +405,13 @@ def update_distplot_3(customer_id):
     font=dict(
         size=10,
         color="RebeccaPurple"
-    )
+    ),
+    margin=dict(
+            l=10,
+            r=10,
+            b=0,
+            t=0,
+            pad=0
+        ),
     )
     return fig
