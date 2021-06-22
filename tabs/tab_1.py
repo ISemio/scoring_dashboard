@@ -268,7 +268,7 @@ def update_barh(customer_id):
         margin=dict(
             l=20,
             #r=30,
-            b=80,
+            b=10,
             t=0,
             pad=0
         ),
@@ -316,7 +316,7 @@ def update_distplot_1(customer_id):
             l=60,
             r=30,
             b=10,
-            t=20,
+            t=25,
             pad=0
         ),
     )
@@ -361,7 +361,7 @@ def update_distplot_2(customer_id):
             l=30,
             r=30,
             b=10,
-            t=20,
+            t=25,
             pad=0
         ),
     )
