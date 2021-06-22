@@ -399,7 +399,7 @@ def update_distplot_3(customer_id):
                 name="Customer position")
     fig.update_layout(
     height=320,
-    width=600,
+    width=650,
     xaxis_title=feat,
     yaxis_title="Density",
     legend=dict(
