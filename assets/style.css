@@ -44,6 +44,7 @@
     background-color: rgb(105, 80, 173);
     color: rgb(170, 161, 207);
     display:flex;
+    max-height:100%;
 }
 
   .customer_filter {
@@ -110,7 +111,6 @@
             color: rgb(27, 4, 41);
             flex-direction: row;
             font-family: Arial, Helvetica, sans-serif;
-            max-height:45%;
           }
         .cust_info_2 {
           background-color: white;
