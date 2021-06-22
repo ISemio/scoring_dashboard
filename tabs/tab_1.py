@@ -254,13 +254,13 @@ def update_barh(customer_id):
     print('customer_id', customer_id)
     df['AGE'] = df['Age']
     dff = df[df['SK_ID_CURR'] == customer_id]
-    features = ['EXT_SOURCE_2',  'AGE', 'DAYS REGISTRATION']
+    features = ['DAYS REGISTRATION',  'AGE', 'EXT_SOURCE_2']
     colors = ['lightsteelblue',] * 3
     colors[1] = 'mediumorchid'
     colors[2] = 'slateblue'
-    x=[dff[features[0]].iloc[0]*100]
+    x=[dff[features[0]].iloc[0]/df[features[0]].max()*100]
     x.append(dff[features[1]].iloc[0])
-    x.append(dff[features[2]].iloc[0]/df[features[1]].max()*100)
+    x.append(dff[features[2]].iloc[0]*100)
     fig = go.Figure(go.Bar(
                 y=features,
                 x=x,
