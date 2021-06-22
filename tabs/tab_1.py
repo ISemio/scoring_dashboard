@@ -258,8 +258,9 @@ def update_barh(customer_id):
     colors = ['lightsteelblue',] * 3
     colors[1] = 'mediumorchid'
     colors[2] = 'slateblue'
-    x=[dff[i].iloc[0]/df[i].max()*100 for i in features if i!='AGE']
-    x.extend(dff[i].iloc[0] for i in features if i=='AGE')
+    x=[dff[features[0]].iloc[0]*100]
+    x.append(dff[features[1]].iloc[0]/df[features[1]].max()*100)
+    x.append(dff[features[2]].iloc[0])
     fig = go.Figure(go.Bar(
                 y=features,
                 x=x,
