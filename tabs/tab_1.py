@@ -254,12 +254,15 @@ def update_barh(customer_id):
     print('customer_id', customer_id)
     df['AGE'] = df['Age']
     dff = df[df['SK_ID_CURR'] == customer_id]
-    features = ['EXT_SOURCE_2', 'AGE', 'DAYS REGISTRATION']
+    features = ['EXT_SOURCE_2', 'DAYS REGISTRATION', 'AGE']
     colors = ['lightsteelblue',] * 3
-    colors[1] = 'slateblue'
+    colors[1] = 'mediumorchid'
+    colors[2] = 'slateblue'
+    x=[dff[i].iloc[0]/df[i].max()*100 for i in features if i!='AGE']
+    x.extend(dff[i].iloc[0] for i in features if i=='AGE')
     fig = go.Figure(go.Bar(
                 y=features,
-                x=[dff[i].iloc[0]/df[i].max()*100 for i in features],
+                x=x,
                 width=[0.5, 0.5, 0.5], # customize width here
                 marker_color=colors,
                 orientation='h'),
@@ -333,7 +336,7 @@ def update_distplot_1(customer_id):
     )
     
 def update_distplot_2(customer_id):
-    feat = 'Age'
+    feat = 'DAYS REGISTRATION'
     x1 = df[df['TARGET']==0][feat]
     x2 = df[df['TARGET']==1][feat]
     marker = df[df['SK_ID_CURR'] == customer_id][feat].iloc[0]
@@ -346,7 +349,7 @@ def update_distplot_2(customer_id):
     
     fig = ff.create_distplot(
         hist_data, group_labels, colors=colors,
-        bin_size=1
+        bin_size=10
         )
     fig.add_scatter(x=[marker], mode="markers",
                 marker=dict(size=10, color="LightSeaGreen"),
@@ -378,7 +381,7 @@ def update_distplot_2(customer_id):
     
     
 def update_distplot_3(customer_id):
-    feat = 'EXT_SOURCE_3'
+    feat = 'AGE'
     print(feat)
     x1 = df[df['TARGET']==0][feat]
     x2 = df[df['TARGET']==1][feat]
@@ -392,7 +395,7 @@ def update_distplot_3(customer_id):
     
     fig = ff.create_distplot(
         hist_data, group_labels, colors=colors,
-        bin_size=.01
+        bin_size=1
         )
     fig.add_scatter(x=[marker], mode="markers",
                 marker=dict(size=10, color="LightSeaGreen"),
