@@ -12,16 +12,15 @@
     width: 200px;
     margin: 10px;
     text-align: center;
-    line-height: 40px;
-    font-size: 40px;
+    line-height: 30px;
   }
   .header_2 {
     background-color: white;
     width: 200px;
     margin: 10px;
     text-align: center;
-    line-height: 40px;
-    font-size: 26px;
+    line-height: 30px;
+    font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
     color: slateblue;
     flex: 1;
@@ -31,8 +30,7 @@
     width: 200px;
     margin: 10px;
     text-align: center;
-    line-height: 40px;
-    font-size: 40px;
+    line-height: 30px;
   }
 
 .tab_name {
