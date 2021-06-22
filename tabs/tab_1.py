@@ -403,7 +403,7 @@ def update_distplot_3(customer_id):
     fig.update_layout(
     height=320,
     width=650,
-    xaxis_title=feat,
+    xaxis_title='AGE',
     yaxis_title="Density",
     legend=dict(
     orientation="v",
