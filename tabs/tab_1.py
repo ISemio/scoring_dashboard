@@ -262,9 +262,9 @@ def update_barh(customer_id):
                 orientation='h'),
                 )
     fig.update_layout(
-        #autosize=False,
+        autosize=True,
         #width=500,
-        #height=350,
+        height=300,
         margin=dict(
             l=20,
             #r=30,
@@ -308,7 +308,7 @@ def update_distplot_1(customer_id):
     yaxis_title="Density", 
     showlegend=False,
     font=dict(
-        size=13,
+        size=10,
         color="RebeccaPurple"
     )
     )
@@ -345,7 +345,7 @@ def update_distplot_2(customer_id):
     yaxis_title="Density",
     showlegend=False,
     font=dict(
-        size=13,
+        size=10,
         color="RebeccaPurple"
     )
     )
@@ -389,7 +389,7 @@ def update_distplot_3(customer_id):
     x=1
 ),
     font=dict(
-        size=13,
+        size=10,
         color="RebeccaPurple"
     )
     )
