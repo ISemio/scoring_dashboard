@@ -316,7 +316,7 @@ def update_distplot_1(customer_id):
             l=60,
             r=30,
             b=10,
-            t=25,
+            t=30,
             pad=0
         ),
     )
@@ -361,7 +361,7 @@ def update_distplot_2(customer_id):
             l=30,
             r=30,
             b=10,
-            t=25,
+            t=30,
             pad=0
         ),
     )
@@ -403,7 +403,7 @@ def update_distplot_3(customer_id):
     yanchor="top",
     y=1,
     xanchor="right",
-    x=1.15
+    x=1.30
 ),
     font=dict(
         size=10,
@@ -413,7 +413,7 @@ def update_distplot_3(customer_id):
             l=30,
             r=60,
             b=10,
-            t=0,
+            t=30,
             pad=0
         ),
     )
