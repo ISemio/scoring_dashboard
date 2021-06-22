@@ -208,8 +208,8 @@ def update_gauge(customer_id):
           }))
     fig.update_layout(
         #autosize=False,
-        width=300,
-        height=250,
+        width=200,
+        height=150,
         margin=dict(
             l=30,
             r=30,
