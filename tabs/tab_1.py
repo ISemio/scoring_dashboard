@@ -322,7 +322,7 @@ def update_distplot_1(customer_id):
             l=60,
             r=30,
             b=10,
-            t=30,
+            t=20,
             pad=0
         ),
     )
@@ -349,14 +349,14 @@ def update_distplot_2(customer_id):
     
     fig = ff.create_distplot(
         hist_data, group_labels, colors=colors,
-        bin_size=10
+        bin_size=50
         )
     fig.add_scatter(x=[marker], mode="markers",
                 marker=dict(size=10, color="LightSeaGreen"),
                 name="Customer position")
     fig.update_layout(
     height=320,
-    xaxis_title='AGE',
+    xaxis_title='DAYS REGISTRATION',
     yaxis_title="Density",
     showlegend=False,
     font=dict(
@@ -367,7 +367,7 @@ def update_distplot_2(customer_id):
             l=30,
             r=30,
             b=10,
-            t=30,
+            t=20,
             pad=0
         ),
     )
@@ -381,7 +381,7 @@ def update_distplot_2(customer_id):
     
     
 def update_distplot_3(customer_id):
-    feat = 'AGE'
+    feat = 'Age'
     print(feat)
     x1 = df[df['TARGET']==0][feat]
     x2 = df[df['TARGET']==1][feat]
@@ -420,7 +420,7 @@ def update_distplot_3(customer_id):
             l=30,
             r=60,
             b=10,
-            t=30,
+            t=20,
             pad=0
         ),
     )
