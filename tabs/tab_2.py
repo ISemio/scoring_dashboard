@@ -168,6 +168,6 @@ def request_result(n_clicks,
     score = data['score']
     print(score)
 
-    if score<0.30:
+    if score<0.50:
         return [html.Div("Loan granted", className="granted")]
     return [html.Div("Loan not granted", className="not_granted")]
