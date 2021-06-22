@@ -255,10 +255,12 @@ def update_barh(customer_id):
     df['AGE'] = df['Age']
     dff = df[df['SK_ID_CURR'] == customer_id]
     features = ['EXT_SOURCE_2', 'AGE', 'DAYS REGISTRATION']
-    colors = {'EXT_SOURCE_2':'steelblue','EXT_SOURCE_2':'firebrick', 'EXT_SOURCE_2':'purple'}
+    colors = ['slateblue',]*3
+    colors[1] = 'crimson'
     fig = go.Figure(go.Bar(
                 y=features,
                 x=[dff[i].iloc[0]/df[i].max()*100 for i in features],
+                width=[0.8, 0.8, 0.8] # customize width here
                 orientation='h'),
                 )
     fig.update_layout(
@@ -396,6 +398,7 @@ def update_distplot_3(customer_id):
                 name="Customer position")
     fig.update_layout(
     height=320,
+    width=600,
     xaxis_title=feat,
     yaxis_title="Density",
     legend=dict(
