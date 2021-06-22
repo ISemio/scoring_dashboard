@@ -266,19 +266,27 @@ def update_barh(customer_id):
                 x=x,
                 width=[0.5, 0.5, 0.5], # customize width here
                 marker_color=colors,
-                orientation='h'),
+                orientation='h',
+                text=[
+                    str(round(x[0]*df[features[0]].max()/100))+' units'+' real scale', 
+                    str(round(x[1]))+' years'+' real scale', 
+                    str(round(x[2]/100, 2))+' units'+' real scale'
+                    ],
+                textposition='auto',
+                ),
                 )
     fig.update_layout(
-        autosize=True,
-        #width=500,
-        height=250,
-        margin=dict(
-            l=20,
-            #r=30,
-            b=10,
-            t=0,
-            pad=0
-        ),
+            xaxis_title="Normalized scale except for Age",
+            autosize=True,
+            #width=500,
+            height=250,
+            margin=dict(
+                l=20,
+                #r=30,
+                b=10,
+                t=0,
+                pad=0
+            ),
     )
     return fig
 
