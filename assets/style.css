@@ -86,7 +86,7 @@
             border-top-style: groove;
             justify-content: center;
             text-align: center;
-            font-size: 18px;
+            font-size: 16px;
             color: rgb(27, 4, 41);
             flex-direction: row;
             font-family: Arial, Helvetica, sans-serif;
@@ -176,6 +176,7 @@
   font-family: Arial, Helvetica, sans-serif;
   align-items: right;
   margin-top:50px;
+  margin-bottom:50px;
   margin-left: 50px;
   width: 120px;
   flex-direction: column;
@@ -185,7 +186,7 @@
   color:red;
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
-  margin:10px;
+  margin:20px;
 
 }
 
@@ -194,7 +195,7 @@
   font-size: 20px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
-  margin:50px;
+  margin:20px;
 }
 
 .not_granted{
@@ -202,5 +203,5 @@
   font-size: 20px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
-  margin:50px;
+  margin:20px;
 }
