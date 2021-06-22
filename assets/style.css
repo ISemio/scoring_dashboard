@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    max-height:10%
+    max-height:10%;
   }
   
   .header_1 {
@@ -47,7 +47,6 @@
     display: flex;
     background-color: white;
     flex-direction: row;
-    max-height: 60%;
   }
     .info_box {
       display: flex;
@@ -122,7 +121,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-height: 40%;
   }
       .feat_content {
       display: flex;
@@ -221,3 +219,15 @@
   font-family: Arial, Helvetica, sans-serif;
   margin:50px;
 }
+
+.header {
+    max-height:10%;
+  }
+
+.customer_filter {
+    max-height:50%;
+  }
+
+.feat_distr {
+    max-height:40%;
+  }
