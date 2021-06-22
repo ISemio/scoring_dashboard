@@ -304,7 +304,7 @@ def update_distplot_1(customer_id):
                 name="Customer position",
                 )
     fig.update_layout(
-    height=400,
+    height=320,
     xaxis_title=feat, 
     yaxis_title="Density", 
     showlegend=False,
@@ -349,7 +349,7 @@ def update_distplot_2(customer_id):
                 marker=dict(size=10, color="LightSeaGreen"),
                 name="Customer position")
     fig.update_layout(
-    height=400,
+    height=320,
     xaxis_title='AGE',
     yaxis_title="Density",
     showlegend=False,
@@ -395,7 +395,7 @@ def update_distplot_3(customer_id):
                 marker=dict(size=10, color="LightSeaGreen"),
                 name="Customer position")
     fig.update_layout(
-    height=450,
+    height=320,
     xaxis_title=feat,
     yaxis_title="Density",
     legend=dict(
