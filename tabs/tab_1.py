@@ -264,7 +264,7 @@ def update_barh(customer_id):
     fig.update_layout(
         autosize=True,
         #width=500,
-        height=300,
+        height=250,
         margin=dict(
             l=20,
             #r=30,
@@ -399,11 +399,11 @@ def update_distplot_3(customer_id):
     xaxis_title=feat,
     yaxis_title="Density",
     legend=dict(
-    orientation="h",
-    yanchor="bottom",
-    y=1.15,
+    orientation="v",
+    yanchor="top",
+    y=1,
     xanchor="right",
-    x=1
+    x=1.15
 ),
     font=dict(
         size=10,
