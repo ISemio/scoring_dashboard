@@ -26,7 +26,7 @@ app.layout = html.Div(
         html.Div([
             html.Img(
                     src = app.get_asset_url('logo.png'),
-                    height = '100 px',
+                    height = '50 px',
                     width = 'auto')
                 ],
                 className = 'header_3',
