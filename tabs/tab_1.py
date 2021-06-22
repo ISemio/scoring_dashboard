@@ -403,7 +403,7 @@ def update_distplot_3(customer_id):
     yanchor="top",
     y=1,
     xanchor="right",
-    x=1.30
+    x=1.50
 ),
     font=dict(
         size=10,
