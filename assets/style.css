@@ -39,9 +39,9 @@
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(105, 80, 173);
     color: rgb(170, 161, 207);
-    max-width: 100%;
-    max-height: 100vh;
-    overflow: auto;
+    max-width: 90%;
+    max-height: 80%;
+    overflow: False;
 }
 
   .customer_filter {
