@@ -94,7 +94,6 @@
           align-items: right;
           flex-direction: row;
           flex: 1;
-          max-height:45%;
         }
           .cust_info_1_1 {
             background-color: rgb(210, 202, 245);
@@ -212,7 +211,7 @@
   color:red;
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
-  margin:50px;
+  margin:10px;
 
 }
 
@@ -232,14 +231,3 @@
   margin:50px;
 }
 
-.header {
-    max-height:10%;
-  }
-
-.customer_filter {
-    max-height:50%;
-  }
-
-.feat_distr {
-    max-height:40%;
-  }
