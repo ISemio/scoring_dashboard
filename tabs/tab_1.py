@@ -349,7 +349,7 @@ def update_distplot_2(customer_id):
     
     fig = ff.create_distplot(
         hist_data, group_labels, colors=colors,
-        bin_size=50
+        bin_size=100
         )
     fig.add_scatter(x=[marker], mode="markers",
                 marker=dict(size=10, color="LightSeaGreen"),
