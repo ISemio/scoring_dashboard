@@ -19,8 +19,8 @@ from logzero import logger as lg
 
 
 # Loading external data
-#path = r"C:\Users\IS\Documents\Data Scientist\P7\P7_semionov_irina\P7_02_dossier\dashboard\src" +'\\'
-path = 'src/'
+path = r"C:\Users\IS\Documents\Data Scientist\P7\P7_semionov_irina\P7_02_dossier\dashboard\src" +'\\'
+#path = 'src/'
 DATA_PATH = path +'data_processed.csv'
 lg.debug(DATA_PATH)
 df = pd.read_csv(DATA_PATH)

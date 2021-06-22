@@ -109,8 +109,8 @@
           width: 700px;
           margin: 50px;
           margin-top: 50px;
-          margin-bottom: 50px;
-          justify-content: center;
+          margin-left: 70px;
+          justify-content: left;
           text-align: center;
           line-height: 30px;
           font-size: 24px;
@@ -135,7 +135,7 @@
     }
     .feat_distr_1 {
       background-color: white;
-      width: 400px;
+      width: 600px;
       margin: 0px;
       text-align: center;
       
